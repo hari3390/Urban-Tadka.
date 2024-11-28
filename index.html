@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Urban Tadka - The Best Indian Chaat in Town">
+    <title>Urban Tadka - Chaat Delights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Urban Tadka</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Urban Tadka!</h2>
+            <p>Experience the best of Indian street food, right at your doorstep.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+
+        <!-- Appetizers -->
+        <div class="menu-category">
+            <h3>Appetizers</h3>
+            <div class="menu-items">
+                <div class="menu-item" onclick="showItemDetails('Samosa (2 pcs)', 'A crispy fried pastry stuffed with spiced potatoes, served with chutney.', '$2.60')">
+                    <img src="images/samosa.jpeg" alt="Samosa (2 pcs)" class="menu-item-image">
+                    <h4>Samosa (2 pcs)</h4>
+                    <p class="price">$2.60</p>
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Onion Bhajis (5 pcs)', 'Crispy, deep-fried fritters made from onions and chickpea flour.', '$3.25')">
+                    <img src="images/onion-bhaji.jpg" alt="Onion Bhajis (5 pcs)" class="menu-item-image">
+                    <h4>Onion Bhajis (5 pcs)</h4>
+                    <p class="price">$3.25</p>
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Vegetable Pakoras', 'A deep-fried snack made with a mix of vegetables in a spiced batter.', '$3.90')">
+                    <img src="images/vegetable-pakora.jpeg" alt="Vegetable Pakoras" class="menu-item-image">
+                    <h4>Vegetable Pakoras</h4>
+                    <p class="price">$3.90</p>
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Chicken Tikka (6 pcs)', 'Tender pieces of chicken marinated in yogurt and spices, grilled to perfection.', '$5.85')">
+                    <img src="images/chicken-tikka.jpeg" alt="Chicken Tikka (6 pcs)" class="menu-item-image">
+                    <h4>Chicken Tikka (6 pcs)</h4>
+                    <p class="price">$5.85</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Courses -->
+        <div class="menu-category">
+            <h3>Main Courses</h3>
+            <div class="menu-items">
+                <div class="menu-item" onclick="showItemDetails('Saag Paneer', 'A traditional North Indian dish made with paneer (Indian cheese) cooked in spiced spinach gravy.', '$6.50')">
+                    <img src="images/saag-paneer.webp" alt="Saag Paneer" class="menu-item-image">
+                    <h4>Saag Paneer</h4>
+                    <p class="price">$6.50</p>
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Aloo Gobi', 'A dry curry made with potatoes and cauliflower cooked in a spiced masala.', '$5.85')">
+                    <img src="images/aloo-gobi.jpg" alt="Aloo Gobi" class="menu-item-image">
+                    <h4>Aloo Gobi</h4>
+                    <p class="price">$5.85</p>
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Chana Masala', 'A flavorful curry made with chickpeas in a spiced tomato-based sauce.', '$6.50')">
+                    <img src="images/chana masala.jpeg" alt="Chana Masala" class="menu-item-image">
+                    <h4>Chana Masala</h4>
+                    <p class="price">$6.50</p>
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Vegetable Curry', 'A hearty vegetable curry made with a variety of seasonal vegetables.', '$2.60')">
+                    <img src="images/vegetable curry.jpg" alt="Vegetable Curry" class="menu-item-image">
+                    <h4>Vegetable Curry</h4>
+                    <p class="price">$2.60</p>
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Butter Chicken', 'A rich and creamy chicken curry with a blend of aromatic spices.', '$9.10')">
+                    <img src="images/butter chicken.jpeg" alt="Butter Chicken" class="menu-item-image">
+                    <h4>Butter Chicken</h4>
+                    <p class="price">$9.10</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- South Indian Special -->
+        <div class="menu-category">
+            <h3>South Indian Special</h3>
+            <div class="menu-items">
+                <div class="menu-item" onclick="showItemDetails('Masala Dosa', 'A crispy, thin pancake filled with spiced potatoes and served with chutneys and sambar.', '$7.80')">
+                    <img src="images/masala dosa.jpeg" alt="Masala Dosa" class="menu-item-image">
+                    <h4>Masala Dosa</h4>
+                    <p class="price">$7.80</p>
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Medu Vada (4 pcs)', 'Deep-fried doughnuts made with urad dal (lentils) and spices, served with chutney.', '$6.50')">
+                    <img src="images/medu vada.webp" alt="Medu Vada (4 pcs)" class="menu-item-image">
+                    <h4>Medu Vada (4 pcs)</h4>
+                    <p class="price">$6.50</p>
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Idli (3 pcs)', 'Steamed rice cakes, soft and fluffy, served with coconut chutney and sambar.', '$4.55')">
+                    <img src="images/idli.jpeg" alt="Idli (3 pcs)" class="menu-item-image">
+                    <h4>Idli (3 pcs)</h4>
+                    <p class="price">$4.55</p>
+                </div>
+            </div>  
+        </div>
+
+        <!-- Rice and Biryani -->
+        <div class="menu-category">
+            <h3>Rice and Biryani</h3>
+            <div class="menu-items">
+                <div class="menu-item" onclick="showItemDetails('Vegetable Biryani', 'A fragrant rice dish made with mixed vegetables, basmati rice, and aromatic spices.', '$5.85')">
+                    <img src="images/vegetable biryani.webp" alt="Vegetable Biryani" class="menu-item-image">
+                    <h4>Vegetable Biryani</h4>
+                    <p class="price">$5.85</p>
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Jeera Rice', 'Simple cumin-flavored rice, a perfect accompaniment to curries.', '$5.20')">
+                    <img src="images/jeera rice.webp" alt="Jeera Rice" class="menu-item-image">
+                    <h4>Jeera Rice</h4>
+                    <p class="price">$5.20</p>
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Curd Rice', 'Rice mixed with yogurt and tempered with mustard seeds, curry leaves, and spices.', '$5.20')">
+                    <img src="images/curd rice.jpg" alt="Curd Rice" class="menu-item-image">
+                    <h4>Curd Rice</h4>
+                    <p class="price">$5.20</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-category">
+            <h3>Desserts</h3>
+            <div class="menu-items">
+                <div class="menu-item" onclick="showItemDetails('Gulab Jamun (2 pcs)', 'Soft, warm dumplings made from milk solids, soaked in sugar syrup.', '$2.60')">
+                    <img src="images/Gulab-jamun.jpg" alt="Gulab Jamun (2 pcs)" class="menu-item-image">
+                    <h4>Gulab Jamun (2 pcs)</h4>
+                    <p class="price">$2.60</p>
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Ras Malai', 'Soft, spongy, and sweet, made from cream and milk, flavored with cardamom and saffron.', '$3.90')">
+                    <img src="images/rasmalai.jpg" alt="Ras Malai" class="menu-item-image">
+                    <h4>Ras Malai</h4>
+                    <p class="price">$3.90</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-category">
+            <h3>Beverages</h3>
+            <div class="menu-items">
+                <div class="menu-item" onclick="showItemDetails('Lassi', 'A cool and creamy yogurt-based drink, perfect for any occasion.', '$3.90', 'lassi-image.jpg')">
+                    <img src="images/sweet salty lassi.jpg" alt="Mango Lassi" class="menu-item-image">
+                    <h4>Lassi</h4>
+                    <p class="price">$3.90</p>  
+                </div>
+                <div class="menu-item" onclick="showItemDetails('Chai', 'A rich and aromatic tea with spices, a traditional favorite.', '$2.60', 'chai-image.jpg')">
+                    <img src="images/chai.jpeg" alt="Masala Chai" class="menu-item-image">
+                    <h4> Chai</h4>
+                    <p class="price">$2.60</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Item Details Modal -->
+    <div id="item-details" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeItemDetails()">&times;</span>
+            <h2 id="item-name"></h2>
+            <p id="item-description"></p>
+            <p><strong>Price:</strong> <span id="item-price"></span></p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Urban Tadka. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
